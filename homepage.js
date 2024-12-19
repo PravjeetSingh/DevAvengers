@@ -1,3 +1,4 @@
+// pravjeet's footer js start
 const cities = [
     "Bangalore", "Mumbai", "Delhi", "Kolkata", "Chennai", "Hyderabad",
     "Pune", "Ahmedabad", "Chandigarh", "Jaipur", "Surat", "Lucknow",
@@ -15,3 +16,4 @@ const cities = [
     option.textContent = city;
     cityDropdown.appendChild(option);
   });
+  //pravjeet's footer end
