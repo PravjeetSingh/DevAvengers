@@ -10,8 +10,32 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 />
+<link rel="stylesheet" href="./DevAvengers/login/login.css">
 </head>
 <body>
+    <!-- pravjeet's login button start -->
+<button class="login-button" onclick="toggleSlider()">Login</button>
+
+<div class="login-slider" id="loginSlider">
+    <button class="close-button" onclick="toggleSlider()">×</button>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div id="passwordError" class="error"></div>
+            </div>
+            <button type="submit" class="submit-button">Login</button>
+        </form>
+    </div>
+</div>
+    <!-- pravjeet's login button end -->
+
     <!-- Sharvari -->
     <!-- navbar -->
     <div class="nav">
@@ -22,7 +46,6 @@
         <a href="#">Swigato Corporate</a>
         <a href="#">Partner with us</a>
         <a class="app-button">Get the App</a>
-        <div class="signin"><a class="">Sign in</a></div>
     </div>
     </div>
     <!-- header1 -->
@@ -61,7 +84,7 @@
         <footer>
           <div class="logo">
             <img src="https://img.icons8.com/color/48/000000/food.png" alt="Swiggy Logo" />
-            Swiggy
+            Swigato
           </div>
       
           <div class="footer-container">
@@ -69,10 +92,10 @@
               <h3>Company</h3>
               <ul>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Swiggy Corporate</a></li>
+                <li><a href="#">Swigato Corporate</a></li>
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Team</a></li>
-                <li><a href="#">Swiggy One</a></li>
+                <li><a href="#">Swigato One</a></li>
               </ul>
             </div>
       
@@ -138,5 +161,6 @@
         </footer>
       </section>
       <script src="homepage.js"></script>
+      <script src="./DevAvengers/login/login.js"></script>
 </body>
 </html>
