@@ -1,0 +1,195 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family:'Gilroy-Bold', sans-serif;
+    background-color: #ff5200;
+    color: #333;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    margin-right: 35%;
+  }
+  .log{
+    width:105%;
+    height: 48px;
+  }
+  .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
+    position: relative;
+  }
+  .nav a{
+    text-decoration: none;
+    color: #fff;
+    font-family:'Gilroy-Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: -.4px;
+    cursor: pointer;
+  }
+  
+  .hrefs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px;
+    /* margin-right: 15%; */
+  }
+  .app-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    padding:12px 16px;
+    gap:4px;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 12px;
+  }
+  .signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    padding:12px 16px;
+    gap:4px;
+    background-color: black;
+    color: #fff;
+    border-radius: 12px;
+  }
+
+  input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-family:'Gilroy-Bold', sans-serif;
+  }
+
+  .sect1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0px 32px;
+    position: relative;
+  }
+  .leftimg{
+    height: 520px ;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .heading1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+    order: 1;
+  }
+  .h1{
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+    padding-left: 16px;
+    color: rgb(255, 255, 255);
+    font-family:'Gilroy-Bold', sans-serif;
+    font-size: 49px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 56px;
+  }
+
+  .address{
+    display: flex;
+    align-items: center;
+  margin: 24px auto 0px;
+  padding: 1rem 1rem; 
+   width: 290px; 
+   background-color: #fff;
+  border-radius: 16px; 
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  margin: 24px auto 0px;
+  padding: 1rem 1rem; 
+   width: 480px; 
+   background-color: #fff;
+  border-radius: 16px; 
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .heroinput{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+    order: 2;
+    gap:20px;
+  }
+  .rgtimg{
+    height: 520px ;
+    width: 250px ;
+    position: absolute;
+    top: 0;
+    right: 0px;
+  }
+  svg{
+    width: 24px;
+    height: 24px;
+  }
+
+/* boxes */
+.header2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 82, 0);
+  padding: 0px 8px 20px;
+}
+
+.boxesh{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 80%;
+  min-height: 290px;
+}
+
+.box-head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  border:1px solid #ffffff;
+  background-color: #fff;
+  width: 100%;
+  height: 190px;
+  border-radius: 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* font-weight:bolder; */
+}
+
+
+img{
+  background: transparent;
+  width:180px;
+}
