@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Checkout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .navbar .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar .title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navbar .right {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .help {
+            margin-right: 15px;
+            font-size: 14px;
+            color: #050b12;
+            cursor: pointer;
+        }
+
+        .navbar .profile {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: #b9b9b9;
+        }
+
+        /* Main content styling */
+        .content {
+            text-align: center;
+            padding: 50px 20px;
+            flex-grow: 1;
+        }
+
+        .content img {
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .content .message {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .content .sub-message {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .content .button {
+            display: inline-block;
+            background-color: #ff5722;
+            color: #fff;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .content .button:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="left">
+            <img src="logo.png" alt="Logo" class="logo">
+            <span class="title">SECURE CHECKOUT</span>
+        </div>
+        <div class="right">
+            <span class="help">Help</span>
+            <div class="profile">
+                <img src="data:image/png;base64,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" alt="Logo" class="logo">
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <img src="C:\Users\afrin\OneDrive\Pictures\Screenshots\Screenshot (1144).png" alt="Cooking Image">
+        <div class="message">Your cart is empty</div>
+        <div class="sub-message">You can go to home page to view more restaurants</div>
+        <a href="#" class="button">SEE RESTAURANTS NEAR YOU</a>
+    </div>
+</body>
+</html>
