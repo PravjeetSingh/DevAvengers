@@ -51,14 +51,28 @@
     letter-spacing: -.4px;
     cursor: pointer;
   }
-  
-  .hrefs{
+  /* Hamburger Button (hidden on larger screens) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  border-radius: 4px;
+}
+  #hrefs{
     display: flex;
     justify-content: center;
     align-items: center;
     grid-gap: 30px;
     /* margin-right: 15%; */
   }
+
   .app-button {
     display: flex;
     justify-content: center;
@@ -446,7 +460,116 @@ select {
 .app a{
     margin-top: -30px;
 }
+
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+/* pravjeet's footer end */
+
 @media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+}
+  .nav {
+    /* flex-direction: column; */
+    /* position:absolute; */
+    padding: 10px;
+    width: 100%;
+   
+  }
+
+  /* Hide navbar links on mobile initially */
+  #hrefs {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on small screens */
+    flex-direction: column;
+  }
+
+  #hrefs a ,.login-button{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    /* width: 100%; */
+    background-color: #ff5200;
+    color: white;
+    text-decoration: none;
+  }
+ 
+  #hrefs a:hover {
+    background-color: #ff7a0e;
+  }
+  #hrefs {
+    overflow-y: auto; 
+    max-height: 300px; 
+  }
+  .leftimg,.rgtimg{
+    width: 120px;
+    height: auto;
+  }
+
+
+  .address{
+    display: flex;
+    align-items: center;
+  margin: 24px auto 0px;
+  padding: 1rem 1rem; 
+   width: 300px; 
+   background-color: #fff;
+  border-radius: 16px; 
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .search{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  margin: 24px auto 0px;
+  padding: 1rem 1rem; 
+   width: 300px;
+   background-color: #fff;
+  border-radius: 16px; 
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .heroinput{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    order: 2;
+    gap:20px;
+  }
+  
+img{
+  background: transparent;
+  width:150px;
+}
+  .grid {
+    grid-template-columns: repeat(3,1fr); 
+  }
+  
+  .grid1 {
+    grid-template-columns: repeat(3,1fr)
+  }
+  
+  .boxesh {
+    max-width: 100%; 
+  }
   .bottom-container {
     flex-direction: column;
     align-items: center;
@@ -456,8 +579,97 @@ select {
     width: 120px;
   }
 }
-.flex{
-  display: flex;
-  flex-direction: row;
+@media (max-width: 1024px) and (min-width: 601px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .nav {
+    padding: 20px;
+    width: 100%;
+  }
+
+  
+  #hrefs {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  #hrefs a, .login-button {
+    font-size: 16px;
+    text-align: center;
+    padding: 12px;
+    background-color: #ff5200;
+    color: white;
+    text-decoration: none;
+  }
+
+  #hrefs a:hover {
+    background-color: #ff7a0e;
+  }
+
+  #hrefs {
+    overflow-y: auto;
+    max-height: 350px;
+  }
+
+  .leftimg, .rgtimg {
+    width: 200px;
+    height: auto;
+  }
+
+  .address, .search {
+    width: 400px; 
+  }
+
+  .heroinput{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+     order: 2;
+     gap:20px;
+   }
+  .grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .boxesh {
+    max-width: 90%; 
+  }
+  .flex{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bottom-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:10px ;
+    gap: 15px;
+  }
+
+  .app img {
+    width: 100px;
+  }
 }
-/* pravjeet's footer end */

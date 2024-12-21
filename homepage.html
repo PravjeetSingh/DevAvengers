@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- pravjeet's login button start -->
-<button class="login-button" onclick="toggleSlider()">Login</button>
+
 
 <div class="login-slider" id="loginSlider">
     <button class="close-button" onclick="toggleSlider()">×</button>
@@ -45,10 +45,18 @@
             </div>
             <h2>Swigato</h2>
         </div>
-        <div class="hrefs">
+       
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        <div id="hrefs">
+           
         <a href="#">Swigato Corporate</a>
-        <a href="#">Partner with us</a>
+        <a href="about.html">Partner with us</a>
         <a class="app-button">Get the App</a>
+         <button class="login-button" onclick="toggleSlider()">Login</button>
     </div>
     </div>
     <!-- header1 -->
@@ -299,5 +307,43 @@
       </section>
       <script src="homepage.js"></script>
       <script src="./DevAvengers/login/login.js"></script>
+      <script>// Function to toggle the visibility of the navbar links
+        // function toggleMenu() {
+        //   const navbarLinks = document.getElementById("hrefs");
+        //   navbarLinks.style.display = (navbarLinks.style.display === "flex") ? "none" : "flex";
+        // }
+        window.addEventListener('DOMContentLoaded', function() {
+      const navbarLinks = document.getElementById("hrefs");
+      const hamburger = document.querySelector(".hamburger");
+
+      if (window.innerWidth <= 1024) {
+        navbarLinks.style.display = 'none';
+        hamburger.style.display = 'flex';
+      } else {
+        navbarLinks.style.display = 'flex';
+        hamburger.style.display = 'none';
+      }
+    });
+
+    function toggleMenu() {
+      const navbarLinks = document.getElementById("hrefs");
+      if (window.innerWidth <= 1024) {
+        navbarLinks.style.display = (navbarLinks.style.display === "flex") ? "none" : "flex";
+      }
+    }
+
+    window.addEventListener('resize', function() {
+      const navbarLinks = document.getElementById("hrefs");
+      const hamburger = document.querySelector(".hamburger");
+
+      if (window.innerWidth > 1024) {
+        navbarLinks.style.display = 'flex';
+        hamburger.style.display = 'none';
+      } else {
+        navbarLinks.style.display = 'none';
+        hamburger.style.display = 'flex';
+      }
+    });
+        </script>
 </body>
 </html>
