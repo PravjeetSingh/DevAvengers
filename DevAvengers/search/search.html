@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/homepage.html">
+            <img src="./logo/logo_no_bg.png" alt="Logo" class="logo">
+        </a>
+        <h2 class="h2">Swigato</h2>
+        <div class="cart-icon" id="cartIcon">🛒</div>
+    </div>
+    
+    <div class="search-container">
+        <input type="text" class="search-input" id="searchBar" placeholder="Search for dishes...">
+        <div class="suggestions" id="suggestionsBox"></div>
+    </div>
+    <div class="cart-container" id="cartContainer">
+        <button class="cart-close" id="cartClose">&times;</button>
+        <div class="cart-title">Your Cart</div>
+        <div id="cartItems"></div>
+        <div class="total-price" id="totalPrice">Total: ₹0</div>
+    </div>
+
+ <script src="serch.js"></script>
+</body>
+</html>

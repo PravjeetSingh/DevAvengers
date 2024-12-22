@@ -1,0 +1,109 @@
+{
+    "menu": [
+      {
+        "item_id": 201,
+        "name": "Chicken Biryani",
+        "description": "Aromatic basmati rice with marinated chicken and spices, served with raita.",
+        "price": 14.99,
+        "ingredients": ["chicken", "basmati rice", "yogurt", "spices", "onions", "mint"],
+        "category": "Biryani"
+      },
+      {
+        "item_id": 202,
+        "name": "Mutton Biryani",
+        "description": "Tender mutton cooked with fragrant rice and flavorful spices, accompanied by raita.",
+        "price": 16.99,
+        "ingredients": ["mutton", "basmati rice", "yogurt", "spices", "onions", "mint"],
+        "category": "Biryani"
+      },
+      {
+        "item_id": 203,
+        "name": "Vegetable Biryani",
+        "description": "A spicy and flavorful rice dish with mixed vegetables and aromatic spices.",
+        "price": 12.99,
+        "ingredients": ["basmati rice", "carrots", "peas", "cauliflower", "spices", "onions"],
+        "category": "Biryani"
+      },
+      {
+        "item_id": 204,
+        "name": "Pepperoni Pizza",
+        "description": "Classic pizza with tomato sauce, mozzarella cheese, and spicy pepperoni slices.",
+        "price": 10.99,
+        "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "pepperoni"],
+        "category": "Pizza"
+      },
+      {
+        "item_id": 205,
+        "name": "Margherita Pizza",
+        "description": "Fresh mozzarella, tomatoes, and basil on a thin crust.",
+        "price": 9.99,
+        "ingredients": ["pizza dough", "mozzarella", "tomato", "basil"],
+        "category": "Pizza"
+      },
+      {
+        "item_id": 206,
+        "name": "BBQ Chicken Pizza",
+        "description": "A delicious pizza with BBQ sauce, grilled chicken, red onions, and cilantro.",
+        "price": 11.99,
+        "ingredients": ["pizza dough", "BBQ sauce", "grilled chicken", "red onions", "cilantro"],
+        "category": "Pizza"
+      },
+      {
+        "item_id": 207,
+        "name": "Spaghetti Carbonara",
+        "description": "Classic Italian pasta with creamy egg sauce, pancetta, and parmesan cheese.",
+        "price": 13.49,
+        "ingredients": ["spaghetti", "egg", "pancetta", "parmesan cheese", "cream"],
+        "category": "Pasta"
+      },
+      {
+        "item_id": 208,
+        "name": "Fettuccine Alfredo",
+        "description": "Fettuccine pasta in a rich and creamy Alfredo sauce, topped with parmesan.",
+        "price": 12.99,
+        "ingredients": ["fettuccine", "cream", "butter", "parmesan cheese", "garlic"],
+        "category": "Pasta"
+      },
+      {
+        "item_id": 209,
+        "name": "Penne Arrabbiata",
+        "description": "Penne pasta in a spicy tomato sauce with garlic, chili, and herbs.",
+        "price": 11.49,
+        "ingredients": ["penne", "tomato sauce", "garlic", "chili flakes", "parmesan cheese"],
+        "category": "Pasta"
+      },
+      {
+        "item_id": 210,
+        "name": "Garlic Bread",
+        "description": "Crispy bread slices topped with garlic butter and herbs.",
+        "price": 4.99,
+        "ingredients": ["bread", "butter", "garlic", "parsley"],
+        "category": "Sides"
+      },
+      {
+        "item_id": 211,
+        "name": "Masala Chai",
+        "description": "Traditional Indian tea brewed with spices like cardamom, ginger, and cinnamon.",
+        "price": 2.99,
+        "ingredients": ["tea leaves", "cardamom", "ginger", "cinnamon", "milk", "sugar"],
+        "category": "Tea"
+      },
+      {
+        "item_id": 212,
+        "name": "Green Tea",
+        "description": "A refreshing and light tea made from steamed green tea leaves.",
+        "price": 2.49,
+        "ingredients": ["green tea leaves", "water"],
+        "category": "Tea"
+      },
+      {
+        "item_id": 213,
+        "name": "Iced Tea",
+        "description": "Chilled black tea served with lemon slices and ice cubes.",
+        "price": 3.49,
+        "ingredients": ["black tea", "lemon", "ice", "sugar"],
+        "category": "Tea"
+      }
+    ]
+  }
+  
