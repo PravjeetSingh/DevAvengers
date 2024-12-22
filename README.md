@@ -41,16 +41,11 @@ Example
 1. Select "Pizza Palace" from the restaurant list.
 2. Choose items from the menu.
 3. Check the cart for your order summary.
-<div>
-<h3>Home Page </h3>
-  <img src="/DevAvengers/assets/hompage1.png" width="370" height="230px"> 
-</div>
-<div> 
-  <img src="/DevAvengers/assets/homepage2.png" width="350" height="200px">
-</div>
-<div> 
-  <img src="/DevAvengers/assets/homepage3.png" width="370" height="230px">
-</div>
+   ![Homepage1](https://github.com/PravjeetSingh/DevAvengers/blob/developer/assets/hompage1.png)
+ ![Homepage2](https://github.com/PravjeetSingh/DevAvengers/blob/developer/assets/homepage2.png)
+![Homepage2](https://github.com/PravjeetSingh/DevAvengers/blob/developer/assets/homepage3.png)
+
+   
  
 Credentials
 This project is static and does not include authentication.
